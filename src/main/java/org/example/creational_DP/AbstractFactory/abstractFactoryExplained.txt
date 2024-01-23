@@ -1,0 +1,39 @@
+Usage:
+The Abstract Factory pattern is employed when your code needs to work with various families of related products, but you don't want it to depend
+on the concrete classes of those products. This can be useful when the concrete classes might be unknown beforehand or when you want to allow for
+future extensibility. The Abstract Factory provides an interface for creating objects from each class of the product family,
+ensuring that your code remains oblivious to the specific variants of products it creates.
+
+Consider implementing the Abstract Factory when a class has a set of Factory Methods that blur its primary responsibility.
+When a class deals with multiple product types, it may be worth extracting its factory methods into a standalone factory
+class or a full-blown Abstract Factory implementation.
+
+    Pros:
+        Product Compatibility:
+            You can be sure that the products obtained from a factory are compatible with each other.
+
+        Loose Coupling:
+            Avoids tight coupling between concrete products and client code.
+
+        Single Responsibility Principle:
+            Supports the Single Responsibility Principle by consolidating product creation code.
+
+        Open/Closed Principle:
+            Introduces new variants of products without breaking existing client code.
+
+    Cons:
+        Increased Complexity:
+        The code may become more complicated due to the introduction of new interfaces and classes.
+
+    Relations with Other Patterns:
+        Evolution from Factory Method:
+            Many designs evolve from Factory Method to Abstract Factory, Prototype, or Builder for increased flexibility.
+
+        Comparison with Builder:
+            Builder focuses on constructing complex objects step by step, while Abstract Factory specializes in creating families of related objects immediately.
+
+        Combination with Bridge:
+            Abstract Factory and Bridge can be used together when some abstractions defined by Bridge work only with specific implementations. Abstract Factory can encapsulate these relations, hiding complexity from client code.
+
+        Singleton Implementation:
+            Abstract Factories, Builders, and Prototypes can all be implemented as Singletons, providing a single point of access for creating related objects.

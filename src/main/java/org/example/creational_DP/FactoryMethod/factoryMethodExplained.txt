@@ -1,4 +1,4 @@
-Applicable:
+Usage:
 
 The Factory Method pattern is beneficial when you don't know the exact types and dependencies of objects your code should work with. It separates product construction code from the
 code that uses the product, enabling easier extension of the product construction independently. This pattern is especially useful when you want to provide users

@@ -1,0 +1,33 @@
+Usage:
+
+The Builder pattern is beneficial when dealing with a "telescopic constructor," a constructor with numerous optional parameters.
+Creating overloaded constructors to handle different parameter combinations can become unwieldy. The Builder pattern allows you to build objects step by step,
+utilizing only the necessary steps and eliminating the need for overloaded constructors.
+
+Use the Builder pattern when:
+You want your code to create different representations of a product (e.g., kids meal and regular meal, stone and wooden houses).
+The construction of various representations of a product involves similar steps that differ only in details.
+You need to construct Composite trees or other complex objects.
+The Builder pattern enables you to construct products step-by-step, defer execution of some steps without breaking the final product, and call steps recursively for building object trees.
+
+Pros:
+    Construction Step Control:
+        Construct objects step-by-step, deferring or recursively executing steps.
+        Prevent fetching incomplete results, as a builder doesn't expose the unfinished product during construction.
+
+    Code Reusability:
+        Reuse the same construction code for building various representations of products.
+
+    Single Responsibility Principle:
+        Isolate complex construction code from the business logic of the product.
+
+Cons:
+    Increased Code Complexity:
+        The overall complexity of the code increases due to the creation of multiple new classes.
+
+Relations with Other Patterns:
+Many designs start with Factory Method and evolve toward Abstract Factory, Prototype, or Builder for increased flexibility.
+Builder focuses on constructing complex objects step by step, while Abstract Factory specializes in creating families of related objects immediately.
+Builder is suitable for creating complex Composite trees with recursive construction steps.
+Combination with Bridge: The director class plays the role of abstraction, and different builders act as implementations.
+Abstract Factories, Builders, and Prototypes can all be implemented as Singletons.
