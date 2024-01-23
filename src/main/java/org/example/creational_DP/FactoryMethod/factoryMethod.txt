@@ -1,0 +1,41 @@
+Applicable:
+
+The Factory Method pattern is beneficial when you don't know the exact types and dependencies of objects your code should work with. It separates product construction code from the
+code that uses the product, enabling easier extension of the product construction independently. This pattern is especially useful when you want to provide users
+with a way to extend the internal components of a library or framework. It's also effective in scenarios where you aim to save system resources by reusing existing
+objects, such as database connections or network resources.
+
+Pros and Cons:
+    Pros:
+        Avoids Tight Coupling:
+            Avoids tight coupling between the creator and concrete products.
+
+    Single Responsibility Principle:
+        Product creation code is centralized, adhering to the Single Responsibility Principle.
+
+    Open/Closed Principle:
+        Allows introducing new types of products without breaking existing client code.
+
+    Ideal for Existing Hierarchies:
+        The Factory Method pattern integrates well into existing class hierarchies, making it easier to extend and adapt the codebase.
+        It allows for the introduction of new product types without modifying existing client code.
+
+    Cons:
+        Increased Code Complexity:
+            The code may become more complicated due to the need for introducing multiple subclasses.
+
+Relations with Other Patterns:
+    Evolution of Designs:
+        Many designs start with Factory Method and may evolve towards Abstract Factory, Prototype, or Builder, depending on complexity and flexibility requirements.
+
+    Abstract Factory and Prototype:
+        Abstract Factory classes often use a set of Factory Methods, and Prototype can be used to compose methods on these classes.
+
+    Factory Method and Iterator:
+        Factory Method can be used along with Iterator to let collection subclasses return different types of iterators compatible with the collections.
+
+    Prototype vs. Factory Method:
+        Prototype isn't based on inheritance and avoids its drawbacks, but it requires complicated initialization of the cloned object. Factory Method is based on inheritance but doesn't require an initialization step.
+
+    Factory Method as a Template Method Specialization:
+        Factory Method is a specialization of Template Method, and it may serve as a step in a large Template Method.

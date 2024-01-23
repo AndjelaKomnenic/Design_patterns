@@ -1,4 +1,4 @@
-package org.example.FactoryDP.characters;
+package org.example.creational_DP.FactoryMethod.characters;
 
 public class Wizard implements Character {
 
@@ -13,5 +13,10 @@ public class Wizard implements Character {
     @Override
     public void createCharacter() {
         System.out.println("Wizard: " + name + " \nHealth: " + health);
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 }

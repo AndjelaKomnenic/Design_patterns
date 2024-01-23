@@ -1,9 +1,9 @@
-package org.example;
+package org.example.creational_DP.FactoryMethod;
 
-import org.example.FactoryDP.characters.Character;
-import org.example.FactoryDP.factory.CharacterFactory;
-import org.example.FactoryDP.factory.WarriorFactory;
-import org.example.FactoryDP.factory.WizardFactory;
+import org.example.creational_DP.FactoryMethod.characters.Character;
+import org.example.creational_DP.FactoryMethod.factory.CharacterFactory;
+import org.example.creational_DP.FactoryMethod.factory.WarriorFactory;
+import org.example.creational_DP.FactoryMethod.factory.WizardFactory;
 
 import java.util.Scanner;
 

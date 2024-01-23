@@ -1,0 +1,41 @@
+Usage:
+
+The Singleton pattern is applicable in situations where a class should have only a single instance shared among different parts of the program.
+Common scenarios include having a single database object that needs to be accessed globally. The pattern ensures that object creation is restricted to a
+special method, allowing either the creation of a new object or the return of an existing one if it has already been created.
+
+Pros and Cons:
+
+    Pros:
+        Single Instance Assurance:
+            The pattern guarantees that there is only a single instance of the class.
+
+        Global Access Point:
+            Provides a global access point to the single instance, allowing easy and consistent access throughout the program.
+
+        Lazy Initialization:
+            The singleton object is initialized only when it is first requested, saving resources until needed.
+
+    Cons:
+        Violates Single Responsibility Principle (SRP):
+            The pattern can violate the SRP by addressing two concerns simultaneously.
+
+        Potential Design Masking:
+            May mask bad design by making components of the program overly aware of each other.
+
+        Multithreading Challenges:
+            Special care is needed in multithreaded environments to prevent multiple threads from creating a singleton object multiple times.
+
+        Unit Testing Challenges:
+            Unit testing client code of the Singleton can be challenging due to private constructors and limitations on static method overriding in many languages.
+
+Relations with Other Patterns:
+    Facade:
+        A Facade class can often be transformed into a Singleton, as a single facade object is usually sufficient.
+
+    Flyweight:
+        Flyweight may resemble Singleton if shared states of objects are reduced to a single flyweight object. However, differences exist, such as Singleton's
+        mutability compared to Flyweight's immutability.
+
+    Abstract Factories, Builders, and Prototypes:
+        These design patterns can all be implemented as Singletons, providing a single point of access for creating related objects.

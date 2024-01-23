@@ -1,4 +1,4 @@
-package org.example.FactoryDP.characters;
+package org.example.creational_DP.FactoryMethod.characters;
 
 public class Warrior implements Character {
 
@@ -16,5 +16,10 @@ public class Warrior implements Character {
     @Override
     public void createCharacter() {
         System.out.println("Warrior: " + name + " \nHealth: " + health + " \nShield: " + shield);
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 }
