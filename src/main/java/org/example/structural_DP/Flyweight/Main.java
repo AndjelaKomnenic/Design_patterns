@@ -16,7 +16,6 @@ public class Main {
     }
 
     private static void testTrees() {
-        // Without Flyweight
         Tree pineTree1 = new PineTree("Green");
         Tree pineTree2 = new PineTree("Green");
         Tree oakTree = new OakTree("Brown");
