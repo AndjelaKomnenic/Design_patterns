@@ -1,6 +1,6 @@
 package org.example.creational_DP.Prototype;
 
-public class Circle implements  Shape{
+public class Circle implements Shape{
 
     private String color;
 
