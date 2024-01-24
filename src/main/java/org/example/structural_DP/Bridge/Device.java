@@ -1,4 +1,4 @@
-package org.example.behavioral_DP.Bridge;
+package org.example.structural_DP.Bridge;
 
 public interface Device {
     void turnOn();

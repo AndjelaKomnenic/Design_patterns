@@ -1,4 +1,4 @@
-package org.example.behavioral_DP.Bridge;
+package org.example.structural_DP.Bridge;
 
 public class Main {
     public static void main(String[] args) {

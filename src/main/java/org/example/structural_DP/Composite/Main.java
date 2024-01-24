@@ -1,4 +1,4 @@
-package org.example.behavioral_DP.Composite;
+package org.example.structural_DP.Composite;
 
 public class Main {
     public static void main(String[] args) {

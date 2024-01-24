@@ -1,4 +1,4 @@
-package org.example.behavioral_DP.Adapter;
+package org.example.structural_DP.Adapter;
 
 public interface FileSystemAdapter {
     void createFile(String fileName);

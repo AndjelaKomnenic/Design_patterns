@@ -1,4 +1,4 @@
-package org.example.behavioral_DP.Adapter;
+package org.example.structural_DP.Adapter;
 
 public class WindowsFileSystemAdapter implements FileSystemAdapter{
     private WindowsFileSystem windowsFileSystem;
